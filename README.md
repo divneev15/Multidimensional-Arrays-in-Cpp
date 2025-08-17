@@ -21,45 +21,42 @@ Study and implement **two-dimensional arrays (matrices)** in C++ through program
 
 ## Theory (Multidimensional Arrays)
 
-In C++, an array is a collection of similar data items stored under a common name. A one-dimensional array stores elements in a linear sequence, while a two-dimensional (2D) array stores data in a grid format consisting of rows and columns.
+In C++, an array is a collection of similar data items stored under a common name. A **one-dimensional array** stores elements in a linear sequence, while a **two-dimensional (2D) array** stores data in a **grid format** consisting of rows and columns.
 
-A 2D array is often used to represent a matrix, which is a fundamental data structure in mathematics and computer science. Each element is accessed using two indices:
+A 2D array is often used to represent a **matrix**, which is a fundamental data structure in mathematics and computer science. Each element is accessed using two indices:
 
+```
 A[i][j] → element in i-th row and j-th column
+```
 
-General Form
+### General Form
+
+```cpp
 datatype arrayName[rows][cols];
-
+```
 
 Example:
 
+```cpp
 int matrix[3][3];  // a 3x3 integer matrix
+```
 
-Why Use Multidimensional Arrays?
+### Why Use Multidimensional Arrays?
 
-To represent tables, matrices, and grids.
+* To represent **tables, matrices, and grids**.
+* For performing **mathematical operations** like addition, subtraction, multiplication.
+* In **image processing** (pixels stored in 2D).
+* In **games** (like a chessboard or tic-tac-toe grid).
+* To represent **graphs and adjacency matrices** in data structures.
 
-For performing mathematical operations like addition, subtraction, multiplication.
+### Common Matrix Operations
 
-In image processing (pixels stored in 2D).
-
-In games (like a chessboard or tic-tac-toe grid).
-
-To represent graphs and adjacency matrices in data structures.
-
-Common Matrix Operations
-
-Input and Display: Taking values row by row and showing them.
-
-Addition: Element-by-element sum of two matrices of the same dimension.
-
-Multiplication: Applying the rule of row–column product, valid only if (columns of A = rows of B).
-
-Diagonal Sum: Adding elements from the top-left to the bottom-right.
-
-Transpose: Interchanging rows and columns.
-
-Comparison: Checking if two rows or columns are identical.
+1. **Input and Display:** Taking values row by row and showing them.
+2. **Addition:** Element-by-element sum of two matrices of the same dimension.
+3. **Multiplication:** Applying the rule of row–column product, valid only if (columns of A = rows of B).
+4. **Diagonal Sum:** Adding elements from the top-left to the bottom-right.
+5. **Transpose:** Interchanging rows and columns.
+6. **Comparison:** Checking if two rows or columns are identical.
 
 These operations build a foundation for solving larger problems like solving linear equations, transformations in graphics, and scientific computing.
 
@@ -205,6 +202,19 @@ These operations build a foundation for solving larger problems like solving lin
 * **Consistent formatting** when printing (tabs/spaces) for readability.
 * Prefer **`std::vector`** for runtime sizes; VLAs are non‑standard in C++.
 * Validate **input ranges** (`rows, cols > 0` and within allocated capacity).
+
+---
+## Outcome
+
+By performing this experiment, the learner will:
+
+* Understand how to declare and use **2D arrays** in C++.
+* Be able to **input and output matrices** in a structured format.
+* Successfully perform **addition, multiplication, transpose, and diagonal sum** operations.
+* Learn how to check conditions before executing (e.g., dimension check for multiplication).
+* Compare rows element-by-element and determine equality.
+* Gain confidence in **nested loops, indices, and multi-level iteration**.
+* Strengthen the foundation for **advanced applications** such as numerical methods, graphics programming, and data structures.
 
 ---
 
